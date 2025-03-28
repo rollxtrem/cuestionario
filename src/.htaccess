@@ -1,9 +1,0 @@
-# Servir archivos estáticos con los MIME correctos
-AddType application/javascript .js
-AddType text/css .css
-
-# Redirigir todas las rutas a index.html para SPA (Single Page App)
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
